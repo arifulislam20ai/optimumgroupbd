@@ -242,13 +242,12 @@ footer {
   }
 }
 /* About Section Styles */
-.content {
-  padding: 4rem 2rem;
-  background: #fff;
-  margin: 2rem auto;
-  max-width: 1000px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.content img {
+  width: 100%;
+  max-width: 250px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 10px;
 }
 
 .content h2 {
