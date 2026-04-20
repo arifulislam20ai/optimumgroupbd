@@ -199,7 +199,10 @@ nav a:hover {
   color: #555;
   font-size: 0.9rem;
 }
-
+.director-link {
+  text-decoration: none;
+  color: inherit;
+}
 .investor-text {
   text-align: center;
   max-width: 800px;
