@@ -284,4 +284,20 @@ footer {
   line-height: 1.8;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 1.5rem;
+}
 
+.social-links a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links a img:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
