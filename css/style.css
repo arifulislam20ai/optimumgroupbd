@@ -311,3 +311,95 @@ footer {
   transform: scale(1.2);
   opacity: 0.7;
 }
+/* Contact Section */
+.contact-section {
+  padding: 4rem 2rem;
+  background: #111;
+  color: #fff;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #00aaff;
+}
+
+.contact-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Left Side */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.contact-item img {
+  width: 20px;
+}
+
+/* Map */
+.map {
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Right Side Form */
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background: #00aaff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background: #008ecc;
+}
+
+/* Footer Style Feel */
+.contact-section a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
