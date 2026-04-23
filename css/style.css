@@ -359,3 +359,30 @@ footer {
 .gallery-grid img:hover {
   transform: scale(1.05);
 }
+
+
+/* VIDEO GRID */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.video-grid video {
+  width: 100%;
+  border-radius: 10px;
+  background: black;
+}
+
+.video-grid iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.video-grid video:hover,
+.video-grid iframe:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
