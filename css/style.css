@@ -504,3 +504,6 @@ footer {
   margin-top: 1rem;
   color: #333;
 }
+.reverse {
+  flex-direction: row-reverse;
+}
