@@ -444,3 +444,26 @@ footer {
 .apply-btn:hover {
   background: #0056b3;
 }
+
+
+/* BOOK NOW BUTTON */
+.book-btn {
+  margin-right: 1.5rem;
+  padding: 8px 16px;
+  background: #007BFF;
+  color: white !important;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.book-btn {
+  background: linear-gradient(45deg, #007BFF, #00aaff);
+  box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+}
