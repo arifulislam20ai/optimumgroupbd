@@ -467,3 +467,9 @@ footer {
   background: linear-gradient(45deg, #007BFF, #00aaff);
   box-shadow: 0 4px 10px rgba(0,123,255,0.3);
 }
+
+
+
+#welcomeModal .modal-content {
+  text-align: center;
+}
