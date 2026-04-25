@@ -498,5 +498,23 @@ To become a trusted and leading real estate brand in Bangladesh by providing rel
   © 2026 Optimum Group Limited, All rights reserved.
 </footer>
 
+
+  <div id="welcomeModal" class="modal">
+  <div class="modal-content">
+    <h2>Welcome to Optimum Group Limited</h2>
+    <p>We are glad to have you here. Explore our services and grow with us.</p>
+    <button id="welcomeClose">Enter Website</button>
+  </div>
+</div>
+<script>
+window.onload = function() {
+  document.getElementById("welcomeModal").style.display = "block";
+};
+
+document.getElementById("welcomeClose").onclick = function() {
+  document.getElementById("welcomeModal").style.display = "none";
+};
+</script>
+  
 </body>
 </html>
