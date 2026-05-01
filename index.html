@@ -73,7 +73,7 @@
 </section> -->
 <!-- Banner Slider -->
 <section class="banner-slider">
-
+<div class="slide active">
   <img class="slide active" src="images/webcover.png">
   <img class="slide" src="images/b3.jpeg">
 
@@ -573,7 +573,7 @@ Optimum Transport delivers efficient and dependable transportation and logistics
   © 2026 Optimum Group Limited, All rights reserved.
 </footer>
 
- <script>
+<script>
 let slides = document.querySelectorAll(".slide");
 let index = 0;
 
@@ -581,24 +581,6 @@ function showSlide(i) {
   slides.forEach(slide => slide.classList.remove("active"));
   slides[i].classList.add("active");
 }
-
-// NEXT
-document.querySelector(".next").onclick = () => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-};
-
-// PREVIOUS
-document.querySelector(".prev").onclick = () => {
-  index = (index - 1 + slides.length) % slides.length;
-  showSlide(index);
-};
-
-// AUTO SLIDE
-setInterval(() => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-}, 4000);
 </script> 
 </body>
 </html>
