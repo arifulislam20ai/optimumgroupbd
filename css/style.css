@@ -509,8 +509,6 @@ footer {
 }
 
 
-
-/* SLIDER */
 .banner-slider {
   position: relative;
   width: 100%;
@@ -518,43 +516,23 @@ footer {
   overflow: hidden;
 }
 
+/* FIX: keep visible by default */
 .slide {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
+/* ACTIVE SLIDE */
 .slide.active {
-  display: block;
+  opacity: 1;
+  z-index: 1;
 }
 
-/* ARROWS */
-.banner-slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.prev { left: 20px; }
-.next { right: 20px; }
-
-.banner-slider button:hover {
-  background: rgba(0,0,0,0.8);
-}
-
-/* MOBILE FIX */
-@media (max-width: 768px) {
-  .banner-slider {
-    height: 50vh;
-  }
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
