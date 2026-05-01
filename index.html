@@ -67,32 +67,9 @@
   </nav>
 </header>
 
-<!-- Banner Section 
+<!-- Banner Section  -->
 <section class="banner-with-text">
   <img src="images/webcover.png" alt="Optimum Group Banner">
-</section> -->
-<!-- Banner Slider -->
-<section class="banner-slider">
-
-  <div class="slide active">
-    <img src="images/webcover.png" alt="">
-    <div class="overlay-text">
-      <h1>Welcome to Optimum Group</h1>
-      <p>Building a better future</p>
-    </div>
-  </div>
-
-  <div class="slide">
-    <img src="images/b3.jpeg" alt="">
-    <div class="overlay-text">
-      <h1>Our Businesses</h1>
-      <p>Real Estate, Agro, Healthcare & More</p>
-    </div>
-  </div>
-
-  <button class="prev">&#10094;</button>
-  <button class="next">&#10095;</button>
-
 </section>
 
 <!-- Company Profile -->
@@ -585,29 +562,5 @@ Optimum Transport delivers efficient and dependable transportation and logistics
   © 2026 Optimum Group Limited, All rights reserved.
 </footer>
 
-<script>
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-
-function showSlide(i) {
-  slides.forEach(s => s.classList.remove("active"));
-  slides[i].classList.add("active");
-}
-
-document.querySelector(".next").onclick = () => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-};
-
-document.querySelector(".prev").onclick = () => {
-  index = (index - 1 + slides.length) % slides.length;
-  showSlide(index);
-};
-
-setInterval(() => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-}, 4000);
-</script> 
 </body>
 </html>
