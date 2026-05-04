@@ -508,7 +508,7 @@ footer {
   flex-direction: row-reverse;
 }
 
-/* ===== SIMPLE CSS AUTO SLIDER ===== */
+
 
 .banner-slider {
   width: 100%;
@@ -519,35 +519,27 @@ footer {
 
 .slides {
   display: flex;
-  width: 300%; /* 3 images */
   height: 100%;
   animation: slide 12s infinite;
 }
 
 .slides img {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
-/* ANIMATION */
 @keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(0); }
-
-  36% { transform: translateX(-100%); }
-  66% { transform: translateX(-100%); }
-
-  69% { transform: translateX(-200%); }
-  100% { transform: translateX(-200%); }
+  0%, 33% { transform: translateX(0); }
+  36%, 66% { transform: translateX(-100vw); }
+  69%, 100% { transform: translateX(-200vw); }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .banner-slider {
     height: 50vh;
   }
 }
-
  
 
