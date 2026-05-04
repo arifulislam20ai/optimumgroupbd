@@ -108,10 +108,6 @@ nav a:hover {
 }
 
 /* BANNER */
-.banner-with-text {
-  position: relative;
-  width: 100%;
-}
 
 .banner-with-text img {
   width: 100%;
@@ -510,6 +506,8 @@ footer {
 
 
 
+/* ===== BANNER SLIDER (FINAL FIX) ===== */
+
 .banner-slider {
   width: 100%;
   height: 80vh;
@@ -520,22 +518,23 @@ footer {
 .slides {
   display: flex;
   height: 100%;
+  width: 300%; /* 🔥 VERY IMPORTANT (3 images = 300%) */
   animation: slide 12s infinite;
 }
 
-/* 🔥 KEY FIX */
 .slides img {
-  width: 100%;        /* NOT 100vw */
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  flex: 0 0 100%;     /* 🔥 THIS IS THE MAGIC */
+  flex: 0 0 100%;
 }
 
-/* 🔥 PERFECT ANIMATION */
+/* PERFECT TIMING */
 @keyframes slide {
-  0%, 33% { transform: translateX(0); }
-  36%, 66% { transform: translateX(-100%); }
-  69%, 100% { transform: translateX(-200%); }
+  0%, 30% { transform: translateX(0); }
+  33%, 63% { transform: translateX(-100%); }
+  66%, 96% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
 }
 
 /* MOBILE */
